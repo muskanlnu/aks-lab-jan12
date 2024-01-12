@@ -35,7 +35,7 @@ stages:
               kubernetesServiceConnection: 'kub-serviceconn'
               secretName: employee-img-secret
               namespace: test-namespace
-              dockerRegistryEndpoint: acrsampletesteu2
+              dockerRegistryEndpoint: aks-serviceconn
           - task: KubernetesManifest@0
             displayName: Deploy to Kubernetes cluster
             inputs:
