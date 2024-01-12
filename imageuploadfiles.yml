@@ -36,7 +36,7 @@ stages:
             command: buildAndPush
             repository: employeeproducer
             dockerfile: $(Build.SourcesDirectory)/WorkShop/CloudStack/employee-producer/Dockerfile
-            containerRegistry: acrsampletesteu2    # create service connection 
+            containerRegistry: aks-serviceconn    # create service connection 
             tags: ${{parameters.tags}} 
         
         - task: PublishBuildArtifacts@1
